@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover India's favorite flavors at Rasoi. Explore regional dishes, meet our chef, and book your table."
+    />
+    <meta name="theme-color" content="#f8f6f1" />
+    <title>Rasoi — A little taste of India</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Rasoi home">
+        <span class="brand-mark" aria-hidden="true">र</span>
+        <span class="brand-name">rasoi<span class="brand-period">.</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navigation" id="primary-nav" aria-label="Main navigation">
+        <a href="#menu">Our menu</a>
+        <a href="#story">Our story</a>
+        <a href="#reviews">Kind words</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-book" href="#reserve">Book a table <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> An Indian kitchen, close to home</p>
+          <h1>A little spice,<br />a lot of <em>soul.</em></h1>
+          <p class="hero-description">
+            From slow-simmered curries to street-side favorites, every plate brings a taste of India to your table.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#reserve">Book your table <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#menu">Explore the menu <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <span>Big Indian flavors, made with love</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img
+            class="hero-image"
+            src="assets/rasoi-thali.png"
+            alt="A full Indian thali plate served with a colorful spread of traditional dishes"
+          />
+          <div class="hero-sticker" aria-label="Fresh spices, regional recipes, always made with love">
+            <span>Freshly ground spices</span>
+            <span class="sticker-heart" aria-hidden="true">♥</span>
+            <span>Always made with love</span>
+          </div>
+          <span class="image-caption">A little taste of India.</span>
+        </div>
+        <span class="hero-side-note" aria-hidden="true">GOOD FOOD · GOOD COMPANY · NAMASTE</span>
+      </section>
+
+      <section class="intro-strip" aria-label="Restaurant highlights">
+        <span>Freshly ground spices</span>
+        <span class="strip-star" aria-hidden="true">✳</span>
+        <span>Recipes from across India</span>
+        <span class="strip-star" aria-hidden="true">✳</span>
+        <span>Always room for one more</span>
+      </section>
+
+      <section class="menu-section section-pad" id="menu">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Straight from our kitchen</p>
+            <h2>A feast of <em>India.</em></h2>
+          </div>
+          <p class="section-description">
+            From beloved street-food classics to slow-cooked family recipes, find a new favorite in every corner of our menu.
+          </p>
+        </div>
+
+        <div class="menu-tabs" role="group" aria-label="Filter menu by course">
+          <button class="menu-tab is-active" type="button" data-category="all" aria-pressed="true">All the good stuff</button>
+          <button class="menu-tab" type="button" data-category="starters" aria-pressed="false">Starters</button>
+          <button class="menu-tab" type="button" data-category="mains" aria-pressed="false">Mains</button>
+          <button class="menu-tab" type="button" data-category="desserts" aria-pressed="false">Desserts</button>
+          <button class="menu-tab" type="button" data-category="beverages" aria-pressed="false">Beverages</button>
+        </div>
+
+        <div class="menu-grid">
+          <article class="dish-card" data-category="starters">
+            <div class="dish-photo">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Samosa_and_Tamoto_Chilli_Ketchup_%E2%80%93_Kolkata.jpg/960px-Samosa_and_Tamoto_Chilli_Ketchup_%E2%80%93_Kolkata.jpg" alt="Samosas served with tomato and chilli ketchup" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#samosa">Photo credits</a>
+              <span class="dish-category">Street-food favorite</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Punjabi samosa</h3><span class="dish-price">₹220</span></div>
+              <p>Crisp pastry, spiced potato and peas, mint and tamarind chutney</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="starters">
+            <div class="dish-photo">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Chicken_tikka_in_Araku_Valley%2C_Andhra_Pradesh_01.jpg/960px-Chicken_tikka_in_Araku_Valley%2C_Andhra_Pradesh_01.jpg" alt="Chicken tikka cooked in a tandoor" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#chicken-tikka">Photo credits</a>
+              <span class="dish-category">From the tandoor</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Tandoori chicken tikka</h3><span class="dish-price">₹380</span></div>
+              <p>Charcoal-grilled chicken, warming spices, and a squeeze of lime</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="starters">
+            <div class="dish-photo">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Chana_Dal_Pakora%2C_Kolkata_-_West_Bengal_-_DSC_0027.jpg/960px-Chana_Dal_Pakora%2C_Kolkata_-_West_Bengal_-_DSC_0027.jpg" alt="Golden chana dal pakora, a crisp Indian snack" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#pakora">Photo credits</a>
+              <span class="dish-category">A little crunch</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Chana dal pakora</h3><span class="dish-price">₹260</span></div>
+              <p>Crispy Bengal gram fritters with green chutney and toasted spices</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="starters">
+            <div class="dish-photo">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Hariyali_Paneer_Tikka.jpg" alt="Green hariyali paneer tikka grilled with herbs" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#paneer-tikka">Photo credits</a>
+              <span class="dish-category">From the tandoor</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Paneer tikka</h3><span class="dish-price">₹340</span></div>
+              <p>Smoky paneer, peppers, and our house-made mint chutney</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="mains">
+            <div class="dish-photo">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Butter_Chicken_%282446546141%29.jpg/960px-Butter_Chicken_%282446546141%29.jpg" alt="A bowl of traditional butter chicken curry" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#butter-chicken">Photo credits</a>
+              <span class="dish-category">A house favorite</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Butter chicken</h3><span class="dish-price">₹520</span></div>
+              <p>Tandoor-roasted chicken, velvety tomato makhani, a touch of cream</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="mains">
+            <div class="dish-photo">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Hyderabadi_biryani.png" alt="Hyderabadi biryani layered with fragrant rice and spices" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#biryani">Photo credits</a>
+              <span class="dish-category">Slow-cooked with love</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Hyderabadi dum biryani</h3><span class="dish-price">₹480</span></div>
+              <p>Fragrant basmati, saffron, warming spices, and cooling raita</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="mains">
+            <div class="dish-photo">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Palak_paneer_with_rice.jpg/960px-Palak_paneer_with_rice.jpg" alt="Palak paneer served with rice" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#palak-paneer">Photo credits</a>
+              <span class="dish-category">North Indian classic</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Palak paneer</h3><span class="dish-price">₹420</span></div>
+              <p>Soft paneer in silky spinach, finished with garlic and cream</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="mains">
+            <div class="dish-photo">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Punjabi_style_Dal_Makhani.jpg/960px-Punjabi_style_Dal_Makhani.jpg" alt="Punjabi-style dal makhani" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#dal-makhani">Photo credits</a>
+              <span class="dish-category">Comfort in a bowl</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Dal makhani</h3><span class="dish-price">₹390</span></div>
+              <p>Black lentils simmered overnight, finished with butter and cream</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="desserts">
+            <div class="dish-photo">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Two_Gulab_Jamun_in_a_plate_01.jpg/960px-Two_Gulab_Jamun_in_a_plate_01.jpg" alt="Two gulab jamun in a plate" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#gulab-jamun">Photo credits</a>
+              <span class="dish-category">A sweet ending</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Gulab jamun</h3><span class="dish-price">₹220</span></div>
+              <p>Warm milk dumplings, rose-cardamom syrup, a little pistachio</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="desserts">
+            <div class="dish-photo">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Kesari_Malai_Kulfi.JPG/960px-Kesari_Malai_Kulfi.JPG" alt="Saffron malai kulfi" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#kulfi">Photo credits</a>
+              <span class="dish-category">Cool things down</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Malai kulfi</h3><span class="dish-price">₹180</span></div>
+              <p>Slow-reduced milk, cardamom, and crunchy pistachios</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="desserts">
+            <div class="dish-photo">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Jalebi-red.JPG/960px-Jalebi-red.JPG" alt="Bright orange jalebi" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#jalebi">Photo credits</a>
+              <span class="dish-category">Made fresh</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Jalebi &amp; rabri</h3><span class="dish-price">₹240</span></div>
+              <p>Crisp saffron jalebi with chilled, slow-cooked rabri</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="desserts">
+            <div class="dish-photo">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Ice_Cream_with_Gajar_Halwa.jpg/960px-Ice_Cream_with_Gajar_Halwa.jpg" alt="Gajar ka halwa with ice cream" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#gajar-halwa">Photo credits</a>
+              <span class="dish-category">A little indulgence</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Gajar ka halwa</h3><span class="dish-price">₹210</span></div>
+              <p>Slow-cooked carrots, ghee, khoya, and toasted cashews</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="beverages">
+            <div class="dish-photo">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Masala_Chai.jpg/960px-Masala_Chai.jpg" alt="A cup of freshly brewed masala chai" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#masala-chai">Photo credits</a>
+              <span class="dish-category">A chai break</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Masala chai</h3><span class="dish-price">₹120</span></div>
+              <p>Strong Assam tea, ginger, cardamom, and warming spices</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="beverages">
+            <div class="dish-photo">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Mango-Lassi.jpg/960px-Mango-Lassi.jpg" alt="Mango lassi served cold" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#mango-lassi">Photo credits</a>
+              <span class="dish-category">Cool &amp; creamy</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Mango lassi</h3><span class="dish-price">₹190</span></div>
+              <p>Alphonso mango, chilled yogurt, and just a hint of cardamom</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="beverages">
+            <div class="dish-photo">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Nimbu_pani.JPG" alt="A glass of refreshing nimbu pani" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#nimbu-pani">Photo credits</a>
+              <span class="dish-category">Bright &amp; bubbly</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Nimbu soda</h3><span class="dish-price">₹140</span></div>
+              <p>Fresh lime, sparkling soda, mint, and a pinch of kala namak</p>
+            </div>
+          </article>
+          <article class="dish-card" data-category="beverages">
+            <div class="dish-photo">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Shikanji-_served_with_pomegranate%2Cgrated_apple_and_mint.jpg" alt="Shikanji garnished with pomegranate, apple, and mint" loading="lazy" />
+              <a class="photo-credit" href="photo-credits.html#shikanji">Photo credits</a>
+              <span class="dish-category">A refreshing sip</span>
+            </div>
+            <div class="dish-info">
+              <div><h3>Shikanji</h3><span class="dish-price">₹160</span></div>
+              <p>North Indian spiced lemonade with mint, fruit, and kala namak</p>
+            </div>
+          </article>
+        </div>
+        <p class="menu-note">Our menu celebrates flavors from across India. Ask us about today’s specials.</p>
+      </section>
+
+      <section class="story-section" id="story">
+        <div class="story-image-wrap">
+          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="A chef preparing a meal with care in a sunlit kitchen" loading="lazy" />
+          <div class="story-image-label"><span>From our family</span><span>to yours <span aria-hidden="true">♡</span></span></div>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A note from the chef</p>
+          <h2>Some of my<br />best memories<br />began <em>in the kitchen.</em></h2>
+          <p>
+          I grew up where spices were ground by hand, the dal simmered all afternoon, and the kitchen door was always open.
+          </p>
+          <p>
+          Rasoi is my love letter to the flavors I grew up with. Regional recipes, honest ingredients, and the kind of welcome that makes every meal feel like coming home.
+          </p>
+          <a class="text-link story-link" href="#reserve">Come on in <span aria-hidden="true">↗</span></a>
+          <div class="chef-signature">With love, <span>Anaya</span></div>
+        </div>
+      </section>
+
+      <section class="quote-section" id="reviews">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Don’t just take our word for it <span class="eyebrow-line"></span></p>
+        <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>
+          “The butter chicken tastes like Sunday at home, and the mango lassi might be the best I’ve ever had. We’re already planning our next visit.”
+        </blockquote>
+        <div class="quote-credit"><span class="quote-avatar">P</span><span><strong>Priya S.</strong><small>Neighbor &amp; table regular</small></span></div>
+        <div class="quote-pagination" aria-label="Review 1 of 3"><span class="is-current"></span><span></span><span></span></div>
+      </section>
+
+      <section class="reservation-section" id="reserve">
+        <div class="reservation-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Your seat is waiting</p>
+          <h2>Let’s make<br />a night of <em>it.</em></h2>
+          <p>Come hungry, bring your favorite people, and we’ll take care of the rest.</p>
+          <div class="reservation-detail"><span aria-hidden="true">⌖</span><span>18 Shahpur Jat, New Delhi, India<br /><small>Tuesday – Sunday · 5pm till late</small></span></div>
+          <div class="reservation-detail"><span aria-hidden="true">♡</span><span>Big night or little celebration?<br /><small>Tell us — we love an occasion.</small></span></div>
+          <div class="contact-info" id="contact">
+            <p class="contact-heading">Questions? We’d love to hear from you.</p>
+            <a href="tel:+919876543210"><span aria-hidden="true">☎</span><span><small>Call us</small>+91 98765 43210</span></a>
+            <a href="mailto:hello@rasoi.example"><span aria-hidden="true">✉</span><span><small>Email us</small>hello@rasoi.example</span></a>
+            <small class="contact-note">Sample contact details — replace with your restaurant’s number and email.</small>
+          </div>
+        </div>
+        <form class="reservation-form" id="reservation-form">
+          <h3>Save your seat</h3>
+          <p>We can’t wait to have you.</p>
+          <div class="form-row">
+            <label>Your name<input name="name" type="text" placeholder="How should we call you?" autocomplete="name" required /></label>
+            <label>Email address<input name="email" type="email" placeholder="you@example.com" autocomplete="email" required /></label>
+          </div>
+          <div class="form-row form-row-three">
+            <label>Party size<select name="guests" required><option value="" disabled selected>Choose</option><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option></select></label>
+            <label>Date<input name="date" type="date" required /></label>
+            <label>Time<select name="time" required><option value="" disabled selected>Choose</option><option>5:00 pm</option><option>5:30 pm</option><option>6:00 pm</option><option>6:30 pm</option><option>7:00 pm</option><option>7:30 pm</option><option>8:00 pm</option><option>8:30 pm</option></select></label>
+          </div>
+          <label>A little note <span class="optional">(optional)</span><textarea name="note" rows="2" placeholder="An occasion, an allergy, a favorite table…"></textarea></label>
+          <button class="button button-dark form-submit" type="submit">Request a table <span aria-hidden="true">↗</span></button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+          <small class="form-disclaimer">We’ll be in touch to confirm your reservation.</small>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">र</span><span class="brand-name">rasoi<span class="brand-period">.</span></span></a>
+      <p>Good food. Good company. Namaste.</p>
+      <div class="footer-links"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#contact">Contact</a><a href="photo-credits.html">Photo credits</a><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram ↗</a></div>
+      <small>© 2026 Rasoi. Made with love, always.</small>
+    </footer>
+  </body>
+</html>
